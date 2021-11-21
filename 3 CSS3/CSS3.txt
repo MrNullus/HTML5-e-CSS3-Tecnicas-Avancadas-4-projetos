@@ -1,0 +1,33 @@
+#  Animations - animações  #
+	#>> Animation vão servir para criar animações
+	com CSS3 (puro ou quase puro) e JS;
+
+	// Keyframes são blocos de codigo CSS que definem os
+passos a serem seguidos pela animação;
+	@keyframes nomeAnimacao{
+		// Passos da animação;
+	}
+
+	// Uso basico de animações
+	@keyframes animacao{
+		/*define o começo da animação*/
+		from{
+			background-color: red;
+		}
+		/*define o fim da animação*/
+		to{
+			background-color: yellow;
+		}
+	}
+
+	.animation-div{
+		width: 100px;
+		height: 100px;
+		background-color: red;
+		/* Define o nome da animação */
+		animation-name: animacao;
+		/* Define a duração da animação */
+		animation-duration: 5s;
+	}
+
+	// Quando a animação acaba vai voltar ao estado inicial dele;
