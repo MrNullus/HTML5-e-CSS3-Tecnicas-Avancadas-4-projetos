@@ -157,3 +157,39 @@
 	height: 50px;
 	animation: animacao5 8s ease-out 4s infinite;
 }
+
+
+/* transition 
+	- vai servir para inserir transições em propriedades 
+*/
+.btn{
+	display: block;
+	position: relative;
+	padding: 10px;
+	margin-bottom: 25px;
+	width: 150px;
+	height: 75px;
+	color: #fff;
+	text-transform: uppercase;
+	background-color: #333;
+	border: 2px solid #333;
+	text-align: center;
+	cursor: pointer;
+	transition: 1s;
+}
+
+.btn:hover{
+	color: #333;
+	background-color: #fff;
+}
+
+.transition{
+	width: 50px;
+	height: 100px;
+	background-color: red;
+	transition: 4s;
+}
+
+.transition:hover{
+	width: 300px;
+}
