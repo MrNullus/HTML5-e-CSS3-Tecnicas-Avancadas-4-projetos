@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Recursos do HTML5</title>
+	</head>
+	<body>
+		<h1>Recursos do HTML5</h1>
+		<div>
+			<video width="320" height="240" controls>
+				<source src="video/cidade.mp4" type="video/mp4">
+			</video>	
+		</div>
+
+		<div>
+			<audio controls>
+				<source src="audio/music.mp3" type="audio/mpeg">
+			</audio>
+		</div>
+
+		<div>
+			<figure>
+				<img src="img/ricefield.jpg" alt="Imagem para legenda">
+				<figcaption>
+					Um simples e lindo campo de arroz...
+				</figcaption>
+			</figure>
+		</div>
+
+		<div>
+			<h3>Preencha o formulario para receber novidades!</h3>
+			<form>
+				<label>Email: </label>
+				<input type="email" required placeholder="Digite seu melhor email" autofocus>
+
+				<label>Nome: </label>
+				<input type="text" name="name" required placeholder="Digite seu nome completo">
+
+				<input type="submit" name="Enviar">
+			</form>
+		</div>											
+
+		<div>
+			<p contenteditable="true">
+				Este paragrafo pode ser editado.
+			</p>
+		</div>
+
+		<form>
+			<p>Animais</p>
+
+			<input list="animais" name="animal">
+			<datalist id="animais">
+				<option value="Cachorro"></option>
+				<option value="Gato"></option>
+				<option value="Passaro"></option>
+				<option value="Cavalo"></option>
+			</datalist>
+		</form>
+		<br>
+
+		<progress value="65" max="100"></progress>
+	</body>
+</html>
