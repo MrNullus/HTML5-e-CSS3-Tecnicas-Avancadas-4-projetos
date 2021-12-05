@@ -1,0 +1,133 @@
+#  Animations - animações  #
+	#>> Animation vão servir para criar animações
+	com CSS3 (puro ou quase puro) e JS;
+
+	// Keyframes são blocos de codigo CSS que definem os
+passos a serem seguidos pela animação;
+	@keyframes nomeAnimacao{
+		// Passos da animação;
+	}
+
+	// Uso basico de animações
+	@keyframes animacao{
+		/*define o começo da animação*/
+		from{
+			background-color: red;
+		}
+		/*define o fim da animação*/
+		to{
+			background-color: yellow;
+		}
+	}
+
+	.animation-div{
+		width: 100px;
+		height: 100px;
+		background-color: red;
+		/* Define o nome da animação */
+		animation-name: animacao;
+		/* Define a duração da animação */
+		animation-duration: 5s;
+	}
+
+	// Quando a animação acaba vai voltar ao estado inicial dele;
+
+#  Transition - transições  #
+	#>> vai servir para colocar transições entre efeitos CSS
+	#>> Sintaxe Basica:
+		transition: <efeito> <tempo> <tipo>;	
+		// Mesmos tipos de animation;
+
+# Propriedade calc() #
+	#>> É usado para efetuar calculos dentro de prorpiedades que usam unidades de medida;
+	#>> Operações aceitas:
+		- Soma [+]
+		- Subtração [-]
+		- Multiplicação [*]
+		- Divição [/]
+	! Deve se tomar cuidado com a sintaxe do calc !
+	#>> Sintaxe:
+		calc(<operando> <operador> <operando>)
+
+		ex: calc(50% * 2)
+
+# Gradient - degrades #
+	#>> É a mudança sutil de cores, sendo que é necesario pelo menos duas cores;
+	@ linear-gradient @	
+		- Sendo um dos gradients possiveis de se fazer funciona de forma linear;
+		#>> Sintaxe:
+			.gradient1{
+				/* 
+					1º forma de se colocar gradient  - apenas colocando as cores
+					e como posição segue o padrão vai de cima para baixo
+				*/
+				/* Deve ser colocado dentro de 'background' ou 'background-image'*/
+				background: linear-gradient(purple, blue);
+			}
+
+			/*  2º forma - definindo as direções do gradient */
+			.gradient2{
+				/* to right - o gradient vai ir para a esquerta */
+				background: linear-gradient(to right, purple, blue);
+			}
+
+			.gradient3{
+				/* to left - o gradient vai ir para a direita */
+				background: linear-gradient(to left, red, yellow);
+			}
+
+			.gradient4{
+				/* to top - o gradient vai ir para o topo */
+				background: linear-gradient(to top, red, yellow);
+			}
+
+			.gradient5{
+				/* to top right - o gradient vai ir da diagonal inferior esquera até a direita */
+				background: linear-gradient(to top right, purple, blue);
+			}
+
+			.gradient6{
+				/* o limite minimo de cores é duas - o maximo não existe  */
+				background: linear-gradient(#11f16e, #291f1fd2, #a81223);
+			}
+
+
+	@ radial-gradient @	
+		- Sendo outra possivel gradient, funciona de forma que tem como forma gradient de 'radio' circular;
+		#>> Sitaxe
+			.gradient7{
+				/* O padrão é uma elipse - sendo que as cores se iniciam do centro */
+				background: radial-gradient(#3A3042, #db9d47, #FF784F);
+			}
+			
+			.gradient8{
+				/* Definindo tamanho para as cores */
+				background: radial-gradient(#3A3042 10%, #db9d47 30%, #FF784F);
+			}
+			
+			.gradient9{
+				/* mudando a forma do radial para circulo */
+				background: radial-gradient(circle, #3A3042, #db9d47, #FF784F);
+			}
+
+#  font-face  #
+	#>> Vai servir para que use do servidor sem usar bibliotecas externas e ela passando para o cliente;
+	#>> Sintaxe:
+		@font-face{
+			/* nome da fonte */
+			font-family: "Lage Grafica";
+			/* caminho da fonte */
+			src: url(fonts/lage_grafica.ttf);
+		}
+		
+		.fontface{
+			font-family: "Lage Grafica";
+		}
+
+# Media Query  #
+	#>> É utilizado para efetuar mudanças no layout para tamanhos de tela;
+	#>> usado para criar layouts responsivos;
+
+#  border-radius  #
+	#>> Vai ser usado para arredontar as bordas dos elementos;
+
