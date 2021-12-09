@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>WhatsApp Web Clone</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<script src="https://kit.fontawesome.com/bf7e05c402.js"></script>
+	</head>
+	<body>
+		<!-- container starts -->
+		<div class="container">
+			<!-- sidebar starts -->
+			<aside class="sidebar">
+				<!-- toolbar container -->
+				<div class="toolbar-container">
+					<img src="img/avatar1.png" alt="Foto Avatar" class="user-photo">
+					<div class="auxicons-toolbar-container">
+						<i class="fas fa-spinner"></i>
+						<i class="fas fa-comment-alt"></i>
+						<i class="fas fa-ellipsis-v"></i>
+					</div>
+				</div>
+
+				<!-- notification container -->
+				<div class="notification-container">
+					<i class="fas fa-bell-slash"></i>
+			        <p class="received-notification">
+			        	Receba notificações de novas mensagens
+			        </p>
+			        <p class="activate-notification">
+			        	Ativar notificações na Área de Trabalho
+			        	<i class="fas fa-angle-right"></i>
+			        </p>
+				</div>
+
+				<!-- search container -->
+				<div class="search-container">
+					<i id="contact-search" class="fas fa-search"></i>
+					<input type="text" name="search" id="search" placeholder="Proucurar ou começar uma nova conversa">
+				</div>
+
+				<!-- contacts container -->
+				<div class="contacts-container">
+					<!-- single contact box -->
+					<div class="contact-box active-chat">
+						<img src="img/avatar2.png" alt="Foto Avatar" class="user-photo">
+						<div class="user-info">
+							<p class="user-name">Sabrina Matos</p>
+							<p class="user-messagepreview">Oi, tudo bem seu corno?</p>
+						</div>
+						<div class="message-info">
+							<p class="message-time">3:40</p>
+						</div>
+					</div>
+					<!-- single contact box -->
+					<div class="contact-box">
+						<img src="img/avatar3.png" alt="Foto Avatar" class="user-photo">
+						<div class="user-info">
+							<p class="user-name">Geromel do Rodo</p>
+							<p class="user-messagepreview">Tu está disponivel para um freela meu querido?</p>
+						</div>
+						<div class="message-info">
+							<p class="message-time">11:00</p>
+							<p class="message-pending">3</p>
+						</div>
+					</div>
+					<!-- single contact box -->
+					<div class="contact-box">
+						<img src="img/avatar4.png" alt="Foto Avatar" class="user-photo">
+						<div class="user-info">
+							<p class="user-name">Giovanni</p>
+							<p class="user-messagepreview">Tudo ocorreu tudo bom meu querido, tá tudo perfeito meus queridos!</p>
+						</div>
+						<div class="message-info">
+							<p class="message-time">13:20</p>
+							<p class="message-pending">5</p>
+						</div>
+					</div>
+				</div>
+			</aside>
+			<!-- sidebar ends -->
+
+			<!-- chat container starts -->
+			<main class="chat-container">
+				<!-- chat navbar -->
+				<nav class="chat-navbar">
+					<!-- contact info container -->
+					<div class="contactinfo-container">
+						<img src="img/avatar2.png" alt="Foto Avatar" class="user-photo">				
+						<p class="user-name">
+							Sabrina Matos
+						</p>
+					</div>
+
+					<!-- chat tools container -->
+					<ul class="chattools-container">
+						<li>
+							<i class="fas fa-search"></i>
+						</li>
+						<li>
+							<i class="fas fa-paperclip"></i>
+						</li>
+						<li>
+							<i class="fas fa-ellipsis-v"></i>
+						</li>
+					</ul>
+				</nav>
+
+				<!-- messages container -->
+				<div class="messages-container">
+					<div class="bg-image"></div>
+					<div class="chat-messages">
+						<p class="guest-message">Oi, tudo bem seu corno?</p>
+						<p class="user-message">Eai, tudo numa boa e você?</p>
+					</div>
+				</div>
+
+				<!-- sendmessage container -->
+				<div class="sendmessage-container">
+					<i class="far fa-grin"></i>
+					<input type="text" id="chatmessage" name="message" class="userinput" placeholder="Digite uma mensagem">
+					<i class="fas fa-microphone"></i>
+				</div>
+			</main>
+			<!-- chat container ends -->
+		</div>
+		<!-- container ends -->
+	</body>
+</html>
