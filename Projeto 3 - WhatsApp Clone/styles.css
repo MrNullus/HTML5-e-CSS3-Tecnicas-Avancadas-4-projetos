@@ -1,0 +1,10 @@
+/* general */
+*{
+	box-sizing: border-box;
+}
+
+html, body, ul {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+}
