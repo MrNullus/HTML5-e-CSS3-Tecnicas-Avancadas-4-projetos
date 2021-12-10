@@ -1,0 +1,312 @@
+/* Geral */
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+ 
+a, a:visited {
+  color: #1a0dab;
+}
+
+/* Header */
+header{
+  border-bottom: 1px solid #ebebeb;
+}
+
+#input-box{
+  padding-top: 20px;
+  padding-bottom: 9px;
+}
+
+#input-box img{
+  width: 92px;
+  position: absolute;
+  top:30px;
+  left: 20px;
+}
+
+#input-box form{
+  display: inline-block;
+  position: relative;
+}
+
+#input-box form input{
+  height: 44px;
+  border-radius: 22px;
+  width: 597px;
+  border: 1px solid #dfe1e5;
+  padding: 0 21px;
+  margin-left: 146px;
+  font-size: 16px;
+}
+
+#search-icon,
+#keyboard-icon,
+#mic-icon{
+  position: absolute;
+  top: 14px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#search-icon{
+  right: 18px;
+}
+
+#keyboard-icon{
+  right: 53px;
+}
+
+#mic-icon{
+  right: 88px;
+}
+
+/* navbar */
+#links-list{
+  list-style: none;
+  padding-left: 0;
+  margin-left: 146px;
+  margin-bottom: 0;
+}
+
+#links-list li{
+  display: inline-block;
+  padding: 0 11px;
+}
+
+#links-list li a{
+  color: #5f6368;
+  text-decoration: none;
+  font-size: 13px;
+  padding-bottom: 12px;
+  display: inline-block;
+}
+
+#links-list li span{
+  font-size: 16px;
+  display: inline-block;
+  margin-right: 3px;
+}
+
+#links-list li a:hover{
+  color: #1A73E8;
+}
+
+.active-link{
+  border-bottom: 3px solid #1A73E8;
+}
+
+#links-list .active-link a{
+  color: #1A73E8;
+}
+
+/* Container */
+.container{
+  display: flex;
+  flex-direction: row;
+  padding-left: 165px;
+  padding-right: 70px;
+}
+
+main{
+  flex: 2 1 0; 
+  padding-right: 35px;
+}
+
+aside{
+  flex: 1 1 0;
+  min-width: 460px;
+  margin-top: 50px;
+  position: relative;
+}
+
+/* Main */
+#results{
+  color: #70757A;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.search-result-box {
+  margin-bottom: 10px;
+}
+
+.container .ref-link{
+  position: relative;
+  display: inline-block;
+  width: auto;
+  font-size: 14px;
+  color: #3c4043;
+  text-decoration: none;
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+
+.triangle{
+  position: absolute;
+  top: 7px;
+  right: -15px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #3c4043;
+}
+
+.main-link{
+  font-size: 20px;
+  text-decoration: none;
+  display: block;
+}
+
+.main-link:hover{
+  text-decoration: underline;
+}
+
+.search-result-desc{
+  font-size: 14px;
+  color: #3c4043;
+  line-height: 1.57;
+  margin: 5px 0;
+}
+
+.info-box{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.info{
+  flex: 1 1 1;
+  width: 50%;
+  color: #70757A;
+  font-size: 14px;
+  margin: 5px 0;
+  margin-right: 5px;
+}
+
+.info-title{
+  font-weight: bold;
+}
+
+.related-results ul{
+  list-style: none;
+  padding-left: 0;
+  margin: 5px 0;
+}
+
+.related-results li{
+  display: inline-block;
+}
+
+.related-results li a{
+  font-size: 14px;
+  text-decoration: none;
+}
+
+/* Galeria Aside */
+#gallery-box{
+  height: 186px;
+  position: relative;
+}
+
+#first-img{
+  border-top-left-radius: 10px;
+}
+
+#gallery{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 305px;
+  height: 186px;
+  position: absolute;
+  top: 0;
+  left: 149px;
+}
+
+#gallery div{
+  flex: 1 1 30%;
+  height: 50%;
+  background-size: cover;
+  background-position: center;
+}
+
+#gallery-img1{
+  background-image: url('../img/turing2.jpg');
+}
+
+#gallery-img2{
+  background-image: url('../img/turing3.jpg');
+}
+
+#gallery-img3{
+  background-image: url('../img/turing4.jpg');
+}
+
+#gallery-img4{
+  background-image: url('../img/turing5.jpg');
+}
+
+#gallery-img5{
+  background-image: url('../img/turing6.jpg');
+}
+
+#gallery-img6{
+  background-image: url('../img/turing7.jpg');
+}
+
+#moreimg-btn{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 10px;
+  font-size: 13px;
+  color: #fff;
+  background: rgba(0, 0, 0, .6);
+  text-decoration: none;
+  border-top-left-radius: 5px;
+}
+
+#moreimg-btn span{
+  margin-right: 5px;
+}
+
+/* Infos Aside */
+#about-box{
+  border: 1px solid #ebebeb;
+}
+
+#name-box{
+  border-bottom: 1px solid #ebebeb;
+  padding: 0 15px;
+}
+
+#name{
+  font-size: 30px;
+  font-weight: 400;
+  margin-top: 12px;
+}
+
+#role{
+  color: #70757A;
+  font-size: 14px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.about-text{
+  font-size: 14px;
+  color: #222;
+  line-height: 1.57;
+  padding: 0 15px;
+}
+
+.about-text span{
+  font-weight: bold;
+}
